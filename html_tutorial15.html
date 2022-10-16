@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+        </style>
+    <style>
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 35px auto;
+            background-color: coral;
+        }
+        body{
+            font-family: 'Silkscreen', cursive;
+        }
+        .items{
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: antiquewhite;
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            clear: both;
+        }
+        p,h1{
+            /* text-align: right;
+            text-align: left; */
+            /* text-align: center; */
+            text-align: justify;
+
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is a store</h1>
+        <div id="fruits" class="items">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla iure dolorum eaque ad velit eius quis perspiciatis quas laudantium voluptate eligendi molestias, tempora non laborum aliquid? Dolores dicta cupiditate error.      
+            </p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla iure dolorum eaque ad velit eius quis perspiciatis quas laudantium voluptate eligendi molestias, tempora non laborum aliquid? Dolores dicta cupiditate error.     
+            </p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla iure dolorum eaque ad velit eius quis perspiciatis quas laudantium voluptate eligendi molestias, tempora non laborum aliquid? Dolores dicta cupiditate error.
+            </p>
+        </div>
+
+        <div id="glasses" class="items">
+            <h3>stationary</h3>
+            <p id="glassespara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla iure dolorum eaque ad velit eius quis perspiciatis quas laudantium voluptate eligendi molestias, tempora non laborum aliquid? Dolores dicta cupiditate error.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
