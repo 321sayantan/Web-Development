@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 23px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: coral;
+            /* ---------- syntax: offset-x offsety blur-radius spread-radius--------- */
+            /* box-shadow: 5px 5px green;
+            box-shadow: -5px -5px green;
+            box-shadow: 5px 5px 10px green; */
+            /* box-shadow: -7px -5px 10px 4px green; */
+            /* box-shadow: -10px -10px 5px 4px rgba(70, 200, 190, 0.9); */
+            box-shadow: inset 4px 4px yellow;
+            box-shadow: inset 4px 4px yellow,5px 5px 10px green ;
+        }
+        .card h1{
+            text-shadow: -4px -4px 2px  white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>card1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt voluptate illum repudiandae repellat vitae, provident perspiciatis consequuntur eaque obcaecati maiores dolorem in sequi voluptatibus nesciunt nostrum dignissimos aspernatur eos.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt voluptate illum repudiandae repellat vitae, provident perspiciatis consequuntur eaque obcaecati maiores dolorem in sequi voluptatibus nesciunt nostrum dignissimos aspernatur eos.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt voluptate illum repudiandae repellat vitae, provident perspiciatis consequuntur eaque obcaecati maiores dolorem in sequi voluptatibus nesciunt nostrum dignissimos aspernatur eos.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h1>card4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deserunt voluptate illum repudiandae repellat vitae, provident perspiciatis consequuntur eaque obcaecati maiores dolorem in sequi voluptatibus nesciunt nostrum dignissimos aspernatur eos.</p>
+        </div>
+    </div>
+</body>
+</html>
