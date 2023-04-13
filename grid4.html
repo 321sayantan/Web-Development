@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section contactus'
+            'footer footer footer footer';
+        }
+        .item
+        {
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        #navbar
+        {
+            grid-area: navbar;
+        }
+        #section
+        {
+            grid-area: section;
+        }
+        #contactus
+        {
+            grid-area: contactus;
+        }
+        footer
+        {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Home services about contact_us</div>
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla laudantium omnis voluptatem sed, voluptates ipsa unde, atque, quod maiores saepe cum aliquam assumenda similique mollitia obcaecati rerum! Quam, odit omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime deleniti suscipit officia quasi expedita quas illo molestiae eos error possimus minima corporis, eius tenetur asperiores in voluptates ab, sunt ipsam! Sapiente, nesciunt? Ipsum sequi laudantium, dignissimos distinctio exercitationem consectetur iste molestias corporis! Fugiat officiis nostrum rem, quaerat asperiores nemo eius quis, ex ratione repellendus dolor quo harum eum non sapiente nobis eaque architecto laboriosam dolore, libero mollitia! Placeat vero nihil mollitia voluptate laudantium tempore minus quidem consectetur minima. Odio libero sequi excepturi rerum sunt quasi, ipsum ut repellendus corporis doloremque. Perspiciatis vitae nihil suscipit animi debitis sint dolore error vero?</div>
+        <div id="contactus" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ut nihil? Fuga omnis qui quod illo? Expedita minus, minima quos ipsum beatae natus repellat, neque fuga dignissimos harum esse suscipit sequi consequatur voluptatem ab, nostrum sapiente. Facilis, sapiente nostrum autem vitae voluptatem harum, impedit, sequi numquam quasi ut laudantium. Voluptas aliquam facere, nemo dignissimos cum laborum saepe molestiae quasi repudiandae amet at quas incidunt ea. In nesciunt fuga eius inventore, suscipit eveniet, architecto sapiente eos voluptatem error quam cumque neque. Ipsum maiores iure quam unde doloribus voluptates nam nulla ullam quod quisquam corrupti molestias aut assumenda, asperiores veniam perferendis voluptatum voluptas officiis dignissimos placeat odio, ipsam minus recusandae. Excepturi nostrum sunt ut officiis dolorem, dolor consequuntur? Tempore maiores atque, hic, accusantium eveniet deserunt expedita ipsa minima quod quam vel. Fugit sequi dolorum exercitationem impedit qui maiores commodi, consectetur voluptates est laboriosam sit porro dicta autem unde pariatur, vero voluptate at ab deleniti, rerum fuga nihil laborum. Esse consectetur enim inventore, nostrum sunt molestiae vitae nisi maxime est doloribus repellat at illo, quas numquam amet eligendi cum. Esse officia exercitationem quasi hic? Fugiat, dolore quae ipsam at repudiandae neque, animi adipisci est assumenda dolorum voluptatum iusto laboriosam eaque fuga? Ut, eos!</div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim porro, aliquam maiores dolor soluta voluptates? Perferendis, blanditiis quam! Eaque ut quisquam doloribus! Soluta sequi omnis, quam reiciendis modi ullam.</footer>
+
+
+        <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div>
+        <div class="box">item-12</div>
+        <div class="box">item-13</div>
+        <div class="box">item-14</div>
+        <div class="box">item-15</div>
+        <div class="box">item-16</div> -->
+    </div>
+</body>
+</html>
