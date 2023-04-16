@@ -16,6 +16,19 @@
             food:"briyani"
         }
         console.log(jsonobj);
-    </script>
+        
+        // object type to string type 
+        let jsonstr= JSON.stringify(jsonobj);
+        console.log(jsonstr);
+        
+        // applying functions of string 
+        jsonstr= jsonstr.replace("sayantan","nadu");
+        console.log(jsonstr);
+
+        // string type to object type 
+        newjsonobj = JSON.parse(jsonstr);
+        console.log(newjsonobj);
+
+        </script>
 </body>
 </html>
