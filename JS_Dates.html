@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Dates</title>
+    <style>
+        body {
+            background: url("sunset-5120x2880-clouds-5k-19547.jpg") no-repeat center center/cover;
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: coral;
+            font-size: medium;
+            padding: 23px;
+            margin: 2px;
+            text-align: center;
+        }
+
+        .container1 {
+            border: 2px solid black;
+            background-color: coral;
+            font-size: medium;
+            margin: auto;
+            display: block;
+            padding: 15px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            opacity: 0.65;
+
+        }
+
+        #time {
+            font-weight: bold;
+        }
+
+        #time1,
+        #time2,
+        #time3 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Current time is: <span id="time"></span>
+    </div>
+    <div class="container1">
+        <span id="time1"></span>
+        :
+        <span id="time2"></span>
+        :
+        <span id="time3"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial")
+        // let now= new Date();
+        // let now= new Date('2025-12-06');
+
+        // let now= new Date(year,month,day,hour,minutes,seconds,milliseconds);
+        let now = new Date(2025, 1, 5, 10);
+        console.log(now);
+
+        let yr = now.getFullYear();
+        console.log("The year is:" + yr);
+
+        let dt = now.getDate();
+        console.log("The date is:" + dt);
+
+        let m = now.getMonth();
+        console.log("The month is:" + m);
+
+        let h = now.getHours();
+        console.log("The hour is:" + h);
+
+        now.setDate(5);
+        console.log("The hour is:" + now);
+
+        // function a()
+        // {
+        //     // Date.now();
+        //     console.log(Date.now());
+        // }
+        // setInterval(a,2000);
+
+        function timeset() {
+            time.innerHTML = new Date();
+        }
+        setInterval(timeset, 1000);
+
+
+        function timeset1() {
+            time1.innerHTML = (new Date()).getHours();
+            time2.innerHTML = (new Date()).getMinutes();
+            time3.innerHTML = (new Date()).getSeconds();
+        }
+        setInterval(timeset1, 1000);
+
+
+
+
+    </script>
+</body>
+
+</html>

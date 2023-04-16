@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn
+        {
+            padding: 10px 20px;
+            color: white;
+            background-color: rgb(255, 86, 86);
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            /* transform: rotate(); */
+            /* transition: all 0.5s; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Events:
+    click
+    contentmenu
+    mouseover/mouseout
+    mousedown/ mouseup
+    mousemove
+
+    submit
+    focus
+    DOMcontentloaded
+    transitionend -->
+
+
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dolorem consequuntur ex, sit laudantium voluptatibus omnis? Illo nesciunt obcaecati hic eius quibusdam, quod sint saepe sapiente atque dolorem similique blanditiis. Nemo consectetur dignissimos id facere dolore deleniti ut eaque animi fuga, hic, non voluptatibus et modi? Voluptatibus ratione minus aperiam maxime a quibusdam unde quod, praesentium culpa nostrum ullam? Dolorem vel unde odit cum possimus doloremque labore voluptate nemo ducimus commodi, aliquam dolore ipsam culpa autem repudiandae. Nam, impedit, provident earum nulla ut qui doloribus molestiae asperiores nesciunt magni sed reiciendis illum delectus quidem eum possimus eius? Aperiam, illo assumenda! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit odio animi omnis cumque aperiam nihil provident fuga ducimus corporis soluta praesentium ipsum earum, sit aliquid ad qui perferendis vitae. Aliquam, nostrum et obcaecati nam laborum ratione reiciendis aspernatur inventore fuga adipisci tempore perferendis qui molestiae? Maxime nobis minima laboriosam assumenda consectetur neque similique aperiam inventore rerum mollitia. Quibusdam eveniet dicta eum consequuntur odit perspiciatis tempore tenetur fugit hic! Commodi dolore iste repellat est beatae dolor earum, reiciendis eius libero odit omnis fuga neque veniam sapiente adipisci necessitatibus magnam fugiat repudiandae laborum ab expedita architecto ducimus? Eos architecto suscipit quasi nostrum!</p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+
+
+
+    <script>
+        // let para= document.getElementById('para');
+        // para.addEventListener('mouseover', function run(){
+        //     console.log("mouse inside");
+        // });
+        // para.addEventListener('mouseout', function run(){
+        //     console.log("mouse outside");
+        // });
+        btn.addEventListener('mouseover', function run(){
+        // console.log("mouse outside");
+        // btn.style.transform='scale(1.5)';
+        btn.style.transform='translateX(250px)';
+        // btn.style.transform='skew(0.5rad)';
+        // btn.style.transform='scaleX(10)';
+        
+    });
+    btn.addEventListener('mouseout', function run(){
+        // console.log("mouse outside");
+        // btn.style.transform='scale(1)';
+        btn.style.transform='revert';
+        });
+
+        function togglehide()
+        {
+            let btn= document.getElementById('btn');
+            let para= document.getElementById('para');
+            if(para.style.display!= 'none')
+            {
+                btn.style.transform='rotate(360deg)';
+                // btn.style.transition='all 0.5s ease-in-out';
+                para.style.display= 'none';
+                btn.style.background = 'green';
+            }
+            else
+            {
+                para.style.display= 'block';
+                btn.style.background = 'rgb(255, 86, 86)';
+                btn.style.transform= 'revert';
+                // btn.style.transitionDuration='0.5s';
+            }
+
+        }
+
+    </script>
+</body>
+</html>
