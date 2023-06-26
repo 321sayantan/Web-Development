@@ -1,0 +1,15 @@
+{
+  "name": "sayantan-dance-classes",
+  "version": "1.0.0",
+  "description": "This is my dance website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sayantan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating element using html</title>
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        const a= document.createElement("li");
+        const ele=document.getElementById('list');
+        ele.appendChild(a);
+        ele.lastElementChild.innerHTML="first child"
+
+        document.getElementById('list').appendChild(document.createElement("li"));
+        ele.lastElementChild.innerHTML="last child"
+
+    </script>
+</body>
+</html>
